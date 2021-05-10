@@ -17,11 +17,9 @@ app.use(express.static("public"));
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-    "mongodb+srv://DavidBushard:password123@cluster0.qszqz.mongodb.net/budget?retryWrites=true&w=majority",
+    "mongodb+srv://DavidBushard:DavidBushard@cluster0.qszqz.mongodb.net/budget?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
     useFindAndModify: false,
   }
 );
